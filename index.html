@@ -1,19 +1,360 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Basketball</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Civitas FC</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
         <div class="container">
-        <header>
-            <h1>Basketball</h1>
-        </header>
-        <div class="main-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, consequuntur quam odio rerum saepe at vitae, doloribus itaque iure dolore suscipit, illum neque voluptate veniam beatae voluptatem ab quia non!</p>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#team-roster" class="nav-link">Game Roster</a></li>
+                <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+            </ul>
+            <a class="navbar-brand pull-sm-right m-r-0 hidden-xs-down" href="http://example.com">Link To Example</a>
         </div>
-        <footer>
-            <p>&copy; 2016</p>
-        </footer>
+    </nav>
+    <!-- END navbar -->
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-info">
+        <div class="container text-xs-center p-t-3">
+            <h1 class="display-2 p-t-2">Civitas FC</h1>
+            <p class="lead">vs Lionside B</h1>
+                <p class="lead">Aviation Field @ 4:45pm</p>
+                <div class="btn-group m-t-2" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-danger btn-lg">RSVP</button>
+                    <a href="#game-roster" class="btn btn-secondary btn-lg">View Game Roster</a>
+                </div>
         </div>
-    </body>
+    </div>
+    <!-- /jumbotrong -->
+    <div class="container">
+        <!-- about -->
+        <div id="about" class="row">
+            <div class="col-md-4 col-lg-push-4">
+                <h3>Civitas FC LEFT</h3>
+                <img class="m-b-1 img-fluid img-rounded hidden-xs-down" src="http://placehold.it/500x100" alt="Logo">
+                <p>Team started in 2006 and has been rocking and rolling since then.</p>
+            </div>
+            <div class="col-md-4 col-lg-pull-4">
+                <h3>Team Members RIGHT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus recusandae autem quas sint, hic suscipit sit, illum aspernatur, doloremque minus et aperiam tempore similique. Mollitia sed nulla tempora a temporibus.</p>
+            </div>
+            <div class="col-md-4 col-xl-4">
+                <!-- game-roster -->
+                <h3 class="m-b-2">Game Roster</h3>
+                <div class="list-group">
+                    <a href="#" class="list-group-item"><strong>Phil</strong>: Midfield</a>
+                    <a href="#" class="list-group-item"><strong>Adrian</strong>: Forward</a>
+                    <a href="#" class="list-group-item"><strong>Rafael</strong>: Defense</a>
+                    <a href="#" class="list-group-item"><strong>Jose</strong>: Goalie</a>
+                </div>
+                <!-- /game-roster -->
+            </div>
+            </div>
+            <!-- /about -->
+
+            <div class="row">
+              <col-xs-12>
+ <!-- season schedule -->
+              <h1 id="schedule" class="display-4 text-xs-center m-y-3 text-muted">Season Schedule</h1>
+              <ul>
+                <li class="list-group-item">
+                  <h4 class="list-group-item-heading">Lionside B FC <span class="pull-xs-right">4:45pm</span></h4>
+                  Sunday, May 1st
+                </li>
+                <li class="list-group-item">
+                  <h4 class="list-group-item-heading">Cali FC<span class="pull-xs-right">4:45pm</span></h4>
+                  Sunday, May 15th
+                </li>
+                <li class="list-group-item list-group-item-warning">
+                  <h4 class="list-group-item-heading">Beach Cities United <span class="pull-xs-right">6:00pm</span></h4>
+                  SATURDAY, May 21st
+                </li>
+              </ul>
+            <!-- /season schedule -->
+              </col-xs-12>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- callout button -->
+                      <button type="button" class="btn btn-info-outline btn-large center-block m-y-3" data-toggle="modal" data-target="#team-tryout-modal">Join Team</button>
+                </div>
+            </div>
+
+        <!-- END about -->
+        <!-- full team roster -->
+        <div class="row">
+        <h1 id="team-roster" class="display-4 text-xs-center m-y-3 text-muted">Team Roster</h1>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Mike">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike Stopper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis est, provident quam a harum ex corporis vitae assumenda impedit veniam consequatur deleniti cumque repellat, magni non voluptatibus, aut dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Mike">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike Stopper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis est, provident quam a harum ex corporis vitae assumenda impedit veniam consequatur deleniti cumque repellat, magni non voluptatibus, aut dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Mike">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike Stopper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis est, provident quam a harum ex corporis vitae assumenda impedit veniam consequatur deleniti cumque repellat, magni non voluptatibus, aut dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Mike">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike Stopper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis est, provident quam a harum ex corporis vitae assumenda impedit veniam consequatur deleniti cumque repellat, magni non voluptatibus, aut dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Mike">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike Stopper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis est, provident quam a harum ex corporis vitae assumenda impedit veniam consequatur deleniti cumque repellat, magni non voluptatibus, aut dolorum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Mike">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike Stopper</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis est, provident quam a harum ex corporis vitae assumenda impedit veniam consequatur deleniti cumque repellat, magni non voluptatibus, aut dolorum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- signup form -->
+        <hr>
+        <div class="row p-y-2 text-muted">
+            <div class="col-md-6 col-xl-5">
+                <p><strong>About Civitas</strong></p>
+                <p>Civitas FC has been a team since 2008.</p>
+            </div>
+            <div class="col-md-6 col-xl-5 col-xl-offset-2">
+                <p><strong>Request Tryout</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-butn">
+          <button class="btn btn-primary" type="button">Send</button>
+        </span>
+                </div>
+            </div>
+            <!-- END .col-6 -->
+        </div>
+        <!-- /signup form -->
+        <!-- footer -->
+        <div class="row p-y-1">
+            <div class="col-md-7">
+                <ul class="nav nav-inline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">League</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Standings</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Split button -->
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-secondary">Other Teams</button>
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Manchester United</a>
+                                <a class="dropdown-item" href="#">Chelsea FC</a>
+                                <a class="dropdown-item" href="#">Barcelona FC</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Neymar's Tax Attorney</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- END .col-7 -->
+            <div class="col-md-5 text-md-right">
+                <small>&copy; 2016 Civitas FC</small>
+            </div>
+            <!-- END .col-5 -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- END .container -->
+    <!--===========================================
+        FORM RSVP MODAL
+    =============================================-->
+    <div id="rsvp-modal" class="modal fade">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Game RSVP</h4>
+          </div>
+          <div class="modal-body">
+            <p>PLACEHOLDER FOR FORM</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<!--===========================================
+    FORM TRYOUT MODAL
+=============================================-->
+<div id="team-tryout-modal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Request Tryout</h4>
+      </div>
+      <div class="modal-body">
+        <!-- tryout form -->
+        <div class="alert alert-warning alert-dismissible fade in" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Hurry!</strong> The season starts in 1 week.
+          </div>
+        <form>
+          <h5 class="m-b-2">Player Info</h5>
+          <fieldset class="form-group has-success">
+            <label class="form-control-label p-l-0" for="player-name">Name</label>
+            <input type="text" class="form-control form-control-success" id="player-name" placeholder="Player Name">
+          </fieldset>
+          <fieldset class="form-group has-danger">
+            <label class="form-control-label" for="player-email">Email</label>
+            <input type="email" class="form-control form-control-danger" id="player-email" placeholder="Email">
+          </fieldset>
+          <fieldset class="form-group">
+              <label for="field-position">Field Position</label>
+              <select class="form-control" id="field-position" name="fieldPosition">
+                <option value="defense">Defense</option>
+                <option value="midfield">Midfield</option>
+                <option value="goalie">Goalie</option>
+                <option value="offense">Offense</option>
+              </select>
+            </fieldset>
+            <hr class="m-y-2">
+            <h5>What playing experience do you have?</h5>
+            <div class="form-group c-inputs-stacked">
+              <label class="c-input c-checkbox">
+                <input type="checkbox">
+                <span class="c-indicator"></span>
+                1 years
+              </label>
+              <label class="c-input c-checkbox">
+                <input type="checkbox">
+                <span class="c-indicator"></span>
+                5 years
+              </label>
+              <label class="c-input c-checkbox">
+                <input type="checkbox">
+                <span class="c-indicator"></span>
+                10 years
+              </label>
+            </div>
+            <!-- credit card -->
+                <hr class="m-b-2">
+                <h5 class="m-b-2">Payment Info</h5>
+                <p>Full Season: $120</p>
+                <p>Per Game: $15</p>
+                <div class="row">
+                  <div class="col-lg-6 form-group">
+                    <label for="cc-num">Card Number:</label>
+                    <input class="form-control" id="cc-num" type="text">
+                  </div>
+
+                  <div class="col-lg-3 form-group">
+                    <label for="zip">Zip Code:</label>
+                    <input class="form-control" id="zip" type="text">
+                  </div>
+
+                  <div class="col-lg-3 form-group">
+                    <label for="cvv">CVV:</label>
+                    <input class="form-control" id="cvv" type="text">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="col-lg-12">Expiration Date:</label>
+                  <div class="col-lg-8 form-group">
+                    <select class="c-select form-control" id="exp-month">
+                      <option value="1">1 - January</option>
+                      <option value="2">2 - February</option>
+                      <option value="3">3 - March</option>
+                      <option value="4">4 - April</option>
+                      <option value="5">5 - May</option>
+                      <option value="6">6 - June</option>
+                      <option value="7">7 - July</option>
+                      <option value="8">8 - August</option>
+                      <option value="9">9 - September</option>
+                      <option value="10">10 - October</option>
+                      <option value="11">11 - November</option>
+                      <option value="12">12 - December</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4 form-group">
+                    <select class="c-select form-control" id="exp-year">
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                    </select>
+                  </div>
+                </div>
+                <hr class="m-b-2">
+                <button type="submit" class="btn btn-primary btn-lg">JOIN</button>
+                <!-- /credit card -->
+        </form>
+        <!-- /tryout form -->
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+</body>
+
 </html>
